@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div .card{
+  display: inline-block;
+}
+
+
+.btnSignUp{
+  height: 50px;
+  width: 200px;
+  background-color: aquamarine;
+  border: none;
+  outline: none;
+  box-shadow: 0px 10px 5px gray;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btnSignUp:hover{
+  background-color: aqua;
+}
+.btnSignUp:active{
+  transform: translateY(4px);
+  box-shadow: 0px 5px 5px gray;
+
+}
+.signUpContainer{
+  width: 700px;
+  background-color: rgb(234, 229, 222);
+  margin: 0 auto;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 5px gray;
+  height: 500px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.container label{
+  margin: 15px 0px 0px 4px;
+}
+.container h1{
+  text-align: center;
+}
+
+input[type = text],input[type = password]{
+  height: 30px;
+  margin: 0px 3px 0px 3px;
+}
+.btnForSignUp{
+  margin: 20px;
+  height: 40px;
+  background-color: lightblue;
+}
+.btnForSignUp:hover{
+  background-color: aqua;
+}
+.cross{
+  font-size: 100px;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  cursor: pointer;
+}
+.loginbtn{
+  margin: 0px 0px 0px 35rem;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  font-weight: bold;
+}
+.loginbtn:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+/* login css */
+
+.ProductForm{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 60px auto;
+}
+.ProductDetails{
+  display: flex;
+  border: 2px solid black;
+  padding: 10px
+}
+.product-items{
+  margin: 0px 82px;
+  padding: 14px 0px;
+  
+}
+.line{
+  width: 1px;
+  height: auto;
+  background: black;
+}
+.inputError{
+  margin: 1px 0px 0px 2px;
+  background: red;
+  width: 46%;
+  color: ghostwhite;
+}
+.tableListProduct ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  position: relative;
+  top: 39px;
+  
+}
+.tableListProduct ul li{
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+}
+.search-bar{
+  position: relative;
+  top: 10px;
+  display: flex;
+  /* display: block; */
+  /* margin: 0px auto; */
+  align-items: center;
+  justify-content: center;
+}
+#search-bar-productList{
+  width: 30%;
+  font-size: 21px;
+
+}
+.profile-ul li{
+  margin: 0px 5px 5px 0px;
+ 
+}
+.profile-ul li a{
+  color: black;
+  /* text-decoration: none; */
+  cursor: pointer;
+}

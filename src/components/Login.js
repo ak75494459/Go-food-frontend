@@ -22,8 +22,8 @@ export default function Login() {
         }
       })
       if (result.ok) {
-        console.log(result)
         result = await result.json();
+        console.log(result)
         localStorage.setItem("email",email)
         localStorage.setItem("authtoken",result.jwtToken)
         console.log(localStorage.getItem("authtoken"))

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 
 export default function SignUp() {
@@ -53,7 +53,7 @@ export default function SignUp() {
                             <input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirm password" value={confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value) }} />
                             <button className="btnForSignUp" onClick={fetchData}>Sign Up</button>
                         </div>
-                        <a href="login" className='loginbtn'>Login Now</a>
+                        {/* <Link to="/login" className='loginbtn'>Login Now</Link> */}
                     </div>
                 </div>
             </div>

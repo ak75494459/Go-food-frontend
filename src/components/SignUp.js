@@ -11,7 +11,7 @@ export default function SignUp() {
 
     const fetchData = async (e) => {
         e.preventDefault();
-        console.log({ name, email, password, confirmPassword });
+        
 
         try {
             let result = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/signUp`, {
@@ -23,7 +23,7 @@ export default function SignUp() {
             });
             if (result.ok) {
                 result = await result.json();
-                console.warn(result);
+                localStorage.setItem("user",JSON.stringify({name,email}))
                 navigate("/");
             } else {
                 throw new Error('Error signing up');
@@ -34,7 +34,7 @@ export default function SignUp() {
         }
     }
 
-    console.log("REACT_APP_BASE_API_URL:", process.env.REACT_APP_BASE_API_URL);
+
 
     return (
         <>

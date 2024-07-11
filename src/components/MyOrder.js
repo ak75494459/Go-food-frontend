@@ -5,7 +5,9 @@ export default function MyOrder(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let userEmail = localStorage.getItem("email");
+      let userString = localStorage.getItem("user");
+      const user = JSON.parse(userString);
+      const userEmail = user.email
       let result = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/myOrderData`, {
         method: 'POST',
         headers: {

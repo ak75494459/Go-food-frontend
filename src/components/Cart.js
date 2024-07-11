@@ -12,10 +12,13 @@ export default function Cart() {
   }
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
   const handleCheckOut = async () => {
-    const userEmail = localStorage.getItem("email");
+    const userString = localStorage.getItem("user");
+    const user = JSON.parse(userString)
+    const userEmail = user.email;
+    console.log(userEmail)
     const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/api/orderData`, {
       method: 'POST',
-      headers: { // Corrected from 'header' to 'headers'
+      headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({

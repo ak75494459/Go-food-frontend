@@ -21,12 +21,7 @@ const [cartView , setCartView] = useState(false)
               <li className="nav-item">
                 <Link className="nav-link" to="/myorder">My Order</Link>
               </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/signup">signup</Link>
-                </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/login">Login</Link>
-              </li>
+               
             </ul>
           </div>
         </div>
